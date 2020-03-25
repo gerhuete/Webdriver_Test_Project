@@ -1,0 +1,23 @@
+{
+  "name": "wdriverTest",
+  "version": "1.0.0",
+  "description": "e2e tests for Login access",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerhuete/Webdriver_Test_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerhuete/Webdriver_Test_Project/issues"
+  },
+  "homepage": "https://github.com/gerhuete/Webdriver_Test_Project#readme",
+  "devDependencies": {
+    "@wdio/cli": "^5.22.4"
+  }
+}
