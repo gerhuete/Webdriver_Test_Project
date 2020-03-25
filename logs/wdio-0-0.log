@@ -1,0 +1,65 @@
+2020-03-25T04:11:06.119Z INFO @wdio/local-runner: Run worker command: run
+2020-03-25T04:11:06.904Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-03-25T04:11:06.908Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-03-25T04:11:06.908Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-03-25T04:11:20.998Z INFO webdriver: COMMAND navigateTo("https://webdriver.io/")
+2020-03-25T04:11:21.000Z INFO webdriver: [POST] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598/url
+2020-03-25T04:11:21.000Z INFO webdriver: DATA { url: 'https://webdriver.io/' }
+2020-03-25T04:11:24.273Z INFO webdriver: COMMAND getTitle()
+2020-03-25T04:11:24.274Z INFO webdriver: [GET] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598/title
+2020-03-25T04:11:24.504Z INFO webdriver: RESULT WebdriverIO · Next-gen WebDriver test framework for Node.js
+2020-03-25T04:11:24.511Z INFO webdriver: COMMAND getLogTypes()
+2020-03-25T04:11:24.511Z INFO webdriver: [GET] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598/se/log/types
+2020-03-25T04:11:24.515Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-03-25T04:11:24.517Z INFO webdriver: COMMAND getLogs("browser")
+2020-03-25T04:11:24.518Z INFO webdriver: [POST] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598/se/log
+2020-03-25T04:11:24.518Z INFO webdriver: DATA { type: 'browser' }
+2020-03-25T04:11:24.520Z INFO webdriver: COMMAND getLogs("driver")
+2020-03-25T04:11:24.521Z INFO webdriver: [POST] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598/se/log
+2020-03-25T04:11:24.521Z INFO webdriver: DATA { type: 'driver' }
+2020-03-25T04:11:24.529Z INFO webdriver: RESULT [
+  {
+    level: 'WARNING',
+    message: 'https://webdriver.io/ - A cookie associated with a cross-site resource at http://badge.fury.io/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.',
+    source: 'other',
+    timestamp: 1585109484093
+  },
+  {
+    level: 'WARNING',
+    message: 'https://webdriver.io/ - A cookie associated with a cross-site resource at http://youtube.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.',
+    source: 'other',
+    timestamp: 1585109484357
+  }
+]
+2020-03-25T04:11:24.534Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585109482657
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585109482761
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585109482864
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585109482968
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585109483190
+  }
+]
+2020-03-25T04:11:24.537Z INFO webdriver: COMMAND deleteSession()
+2020-03-25T04:11:24.538Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/63ab071e0b3db27e7a5cfca115401598
