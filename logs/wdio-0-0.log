@@ -1,50 +1,212 @@
-2020-03-25T04:31:08.367Z INFO @wdio/local-runner: Run worker command: run
-2020-03-25T04:31:08.510Z INFO webdriverio: Initiate new session using the webdriver protocol
-2020-03-25T04:31:08.514Z INFO webdriver: [POST] http://127.0.0.1:4444/session
-2020-03-25T04:31:08.514Z INFO webdriver: DATA {
+2020-03-25T05:49:22.129Z INFO @wdio/local-runner: Run worker command: run
+2020-03-25T05:49:22.327Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-03-25T05:49:22.331Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-03-25T05:49:22.331Z INFO webdriver: DATA {
   capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
   desiredCapabilities: { browserName: 'chrome' }
 }
-2020-03-25T04:31:11.628Z INFO webdriver: COMMAND navigateTo("https://webdriver.io/")
-2020-03-25T04:31:11.629Z INFO webdriver: [POST] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b/url
-2020-03-25T04:31:11.630Z INFO webdriver: DATA { url: 'https://webdriver.io/' }
-2020-03-25T04:31:13.627Z INFO webdriver: COMMAND getTitle()
-2020-03-25T04:31:13.628Z INFO webdriver: [GET] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b/title
-2020-03-25T04:31:13.654Z INFO webdriver: RESULT WebdriverIO · Next-gen WebDriver test framework for Node.js
-2020-03-25T04:31:13.665Z INFO webdriver: COMMAND getLogTypes()
-2020-03-25T04:31:13.668Z INFO webdriver: [GET] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b/se/log/types
-2020-03-25T04:31:13.674Z INFO webdriver: RESULT [ 'browser', 'driver' ]
-2020-03-25T04:31:13.677Z INFO webdriver: COMMAND getLogs("browser")
-2020-03-25T04:31:13.678Z INFO webdriver: [POST] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b/se/log
-2020-03-25T04:31:13.679Z INFO webdriver: DATA { type: 'browser' }
-2020-03-25T04:31:13.680Z INFO webdriver: COMMAND getLogs("driver")
-2020-03-25T04:31:13.680Z INFO webdriver: [POST] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b/se/log
-2020-03-25T04:31:13.680Z INFO webdriver: DATA { type: 'driver' }
-2020-03-25T04:31:13.706Z INFO webdriver: RESULT [
-  {
-    level: 'WARNING',
-    message: 'https://webdriver.io/ - A cookie associated with a cross-site resource at http://badge.fury.io/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.',
-    source: 'other',
-    timestamp: 1585110673340
-  },
-  {
-    level: 'WARNING',
-    message: 'https://webdriver.io/ - A cookie associated with a cross-site resource at http://youtube.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.',
-    source: 'other',
-    timestamp: 1585110673405
-  }
-]
-2020-03-25T04:31:13.723Z INFO webdriver: RESULT [
+2020-03-25T05:49:24.766Z INFO webdriver: COMMAND navigateTo("http://automationpractice.com/index.php?controller=authentication&back=my-account")
+2020-03-25T05:49:24.767Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/url
+2020-03-25T05:49:24.767Z INFO webdriver: DATA {
+  url: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+}
+2020-03-25T05:49:27.775Z INFO webdriver: COMMAND findElement("css selector", "input[name="email"]")
+2020-03-25T05:49:27.776Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:27.776Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="email"]' }
+2020-03-25T05:49:27.844Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6525a753-1262-44f8-8027-1fc99e320a6f'
+}
+2020-03-25T05:49:27.882Z INFO webdriver: COMMAND getElementProperty("6525a753-1262-44f8-8027-1fc99e320a6f", "value")
+2020-03-25T05:49:27.882Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/6525a753-1262-44f8-8027-1fc99e320a6f/property/value
+2020-03-25T05:49:27.899Z INFO webdriver: RESULT 
+2020-03-25T05:49:27.900Z INFO webdriver: COMMAND findElement("css selector", "input[name="passwd"]")
+2020-03-25T05:49:27.901Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:27.901Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="passwd"]' }
+2020-03-25T05:49:27.939Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6dc5508c-924d-4293-86ad-3cbb0a9ba2c9'
+}
+2020-03-25T05:49:27.947Z INFO webdriver: COMMAND getElementProperty("6dc5508c-924d-4293-86ad-3cbb0a9ba2c9", "value")
+2020-03-25T05:49:27.948Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/6dc5508c-924d-4293-86ad-3cbb0a9ba2c9/property/value
+2020-03-25T05:49:27.963Z INFO webdriver: RESULT 
+2020-03-25T05:49:27.967Z INFO webdriver: COMMAND navigateTo("http://automationpractice.com/index.php?controller=authentication&back=my-account")
+2020-03-25T05:49:27.967Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/url
+2020-03-25T05:49:27.968Z INFO webdriver: DATA {
+  url: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+}
+2020-03-25T05:49:28.793Z INFO webdriver: COMMAND findElement("css selector", "input[name="email"]")
+2020-03-25T05:49:28.794Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:28.794Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="email"]' }
+2020-03-25T05:49:28.826Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '7c353de0-b869-4b75-9e9b-75161813da57'
+}
+2020-03-25T05:49:28.833Z INFO webdriver: COMMAND elementClear("7c353de0-b869-4b75-9e9b-75161813da57")
+2020-03-25T05:49:28.833Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/7c353de0-b869-4b75-9e9b-75161813da57/clear
+2020-03-25T05:49:28.967Z INFO webdriver: COMMAND elementSendKeys("7c353de0-b869-4b75-9e9b-75161813da57", "test@nicasource.com")
+2020-03-25T05:49:28.968Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/7c353de0-b869-4b75-9e9b-75161813da57/value
+2020-03-25T05:49:28.968Z INFO webdriver: DATA { text: 'test@nicasource.com' }
+2020-03-25T05:49:29.328Z INFO webdriver: COMMAND findElement("css selector", "input[name="passwd"]")
+2020-03-25T05:49:29.328Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:29.328Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="passwd"]' }
+2020-03-25T05:49:29.358Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6e9654b3-3b6b-4d9d-895b-88ee9674418e'
+}
+2020-03-25T05:49:29.365Z INFO webdriver: COMMAND elementClear("6e9654b3-3b6b-4d9d-895b-88ee9674418e")
+2020-03-25T05:49:29.365Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/6e9654b3-3b6b-4d9d-895b-88ee9674418e/clear
+2020-03-25T05:49:29.461Z INFO webdriver: COMMAND elementSendKeys("6e9654b3-3b6b-4d9d-895b-88ee9674418e", "test123")
+2020-03-25T05:49:29.462Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/6e9654b3-3b6b-4d9d-895b-88ee9674418e/value
+2020-03-25T05:49:29.462Z INFO webdriver: DATA { text: 'test123' }
+2020-03-25T05:49:29.684Z INFO webdriver: COMMAND findElement("css selector", "input[name="email"]")
+2020-03-25T05:49:29.685Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:29.685Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="email"]' }
+2020-03-25T05:49:29.720Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '7c353de0-b869-4b75-9e9b-75161813da57'
+}
+2020-03-25T05:49:29.729Z INFO webdriver: COMMAND getElementProperty("7c353de0-b869-4b75-9e9b-75161813da57", "value")
+2020-03-25T05:49:29.729Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/7c353de0-b869-4b75-9e9b-75161813da57/property/value
+2020-03-25T05:49:29.743Z INFO webdriver: RESULT test@nicasource.com
+2020-03-25T05:49:29.744Z INFO webdriver: COMMAND findElement("css selector", "input[name="passwd"]")
+2020-03-25T05:49:29.745Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:29.745Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="passwd"]' }
+2020-03-25T05:49:29.776Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '6e9654b3-3b6b-4d9d-895b-88ee9674418e'
+}
+2020-03-25T05:49:29.782Z INFO webdriver: COMMAND getElementProperty("6e9654b3-3b6b-4d9d-895b-88ee9674418e", "value")
+2020-03-25T05:49:29.783Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/6e9654b3-3b6b-4d9d-895b-88ee9674418e/property/value
+2020-03-25T05:49:29.797Z INFO webdriver: RESULT test123
+2020-03-25T05:49:29.799Z INFO webdriver: COMMAND navigateTo("http://automationpractice.com/index.php?controller=authentication&back=my-account")
+2020-03-25T05:49:29.800Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/url
+2020-03-25T05:49:29.800Z INFO webdriver: DATA {
+  url: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+}
+2020-03-25T05:49:30.520Z INFO webdriver: COMMAND findElement("css selector", "input[name="email"]")
+2020-03-25T05:49:30.521Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:30.521Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="email"]' }
+2020-03-25T05:49:30.560Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '5c54047c-bc2b-4b7c-a101-2aaca9226dec'
+}
+2020-03-25T05:49:30.575Z INFO webdriver: COMMAND elementClear("5c54047c-bc2b-4b7c-a101-2aaca9226dec")
+2020-03-25T05:49:30.576Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/5c54047c-bc2b-4b7c-a101-2aaca9226dec/clear
+2020-03-25T05:49:30.677Z INFO webdriver: COMMAND elementSendKeys("5c54047c-bc2b-4b7c-a101-2aaca9226dec", "test@nicasource.com")
+2020-03-25T05:49:30.678Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/5c54047c-bc2b-4b7c-a101-2aaca9226dec/value
+2020-03-25T05:49:30.678Z INFO webdriver: DATA { text: 'test@nicasource.com' }
+2020-03-25T05:49:31.016Z INFO webdriver: COMMAND findElement("css selector", "input[name="passwd"]")
+2020-03-25T05:49:31.016Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:31.016Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="passwd"]' }
+2020-03-25T05:49:31.042Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': 'da16d2ed-3b0d-4013-8806-1da8dadb8678'
+}
+2020-03-25T05:49:31.049Z INFO webdriver: COMMAND elementClear("da16d2ed-3b0d-4013-8806-1da8dadb8678")
+2020-03-25T05:49:31.049Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/da16d2ed-3b0d-4013-8806-1da8dadb8678/clear
+2020-03-25T05:49:31.142Z INFO webdriver: COMMAND elementSendKeys("da16d2ed-3b0d-4013-8806-1da8dadb8678", "test123")
+2020-03-25T05:49:31.143Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/da16d2ed-3b0d-4013-8806-1da8dadb8678/value
+2020-03-25T05:49:31.143Z INFO webdriver: DATA { text: 'test123' }
+2020-03-25T05:49:31.364Z INFO webdriver: COMMAND findElement("css selector", "button[name="SubmitLogin"]")
+2020-03-25T05:49:31.364Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element
+2020-03-25T05:49:31.364Z INFO webdriver: DATA { using: 'css selector', value: 'button[name="SubmitLogin"]' }
+2020-03-25T05:49:31.400Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '79048c80-d315-4556-a34b-d3046554daf7'
+}
+2020-03-25T05:49:31.407Z INFO webdriver: COMMAND elementClick("79048c80-d315-4556-a34b-d3046554daf7")
+2020-03-25T05:49:31.415Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/element/79048c80-d315-4556-a34b-d3046554daf7/click
+2020-03-25T05:49:32.858Z INFO webdriver: COMMAND getUrl()
+2020-03-25T05:49:32.859Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/url
+2020-03-25T05:49:32.884Z INFO webdriver: RESULT http://automationpractice.com/index.php?controller=my-account
+2020-03-25T05:49:32.888Z INFO webdriver: COMMAND getLogTypes()
+2020-03-25T05:49:32.889Z INFO webdriver: [GET] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/se/log/types
+2020-03-25T05:49:32.895Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2020-03-25T05:49:32.897Z INFO webdriver: COMMAND getLogs("browser")
+2020-03-25T05:49:32.898Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/se/log
+2020-03-25T05:49:32.898Z INFO webdriver: DATA { type: 'browser' }
+2020-03-25T05:49:32.898Z INFO webdriver: COMMAND getLogs("driver")
+2020-03-25T05:49:32.899Z INFO webdriver: [POST] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779/se/log
+2020-03-25T05:49:32.899Z INFO webdriver: DATA { type: 'driver' }
+2020-03-25T05:49:32.908Z INFO webdriver: RESULT []
+2020-03-25T05:49:32.923Z INFO webdriver: RESULT [
   {
     level: 'SEVERE',
     message: 'Timed out receiving message from renderer: 0.100\n',
-    timestamp: 1585110672490
+    timestamp: 1585115365650
   },
   {
     level: 'SEVERE',
     message: 'Timed out receiving message from renderer: 0.100\n',
-    timestamp: 1585110672593
+    timestamp: 1585115365754
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115365856
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115365960
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366063
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366167
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366269
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366469
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366577
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366679
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366808
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115366913
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115367017
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115367515
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115367632
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115367734
+  },
+  {
+    level: 'SEVERE',
+    message: 'Timed out receiving message from renderer: 0.100\n',
+    timestamp: 1585115372731
   }
 ]
-2020-03-25T04:31:13.725Z INFO webdriver: COMMAND deleteSession()
-2020-03-25T04:31:13.726Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/e84176fb5a6d7c0e2097bd39ac2cd92b
+2020-03-25T05:49:32.932Z INFO webdriver: COMMAND deleteSession()
+2020-03-25T05:49:32.932Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/7c4ea43adbeb6571a5b4c589d2b25779

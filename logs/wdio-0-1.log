@@ -1,0 +1,30 @@
+2020-03-25T04:36:11.217Z INFO @wdio/local-runner: Run worker command: run
+2020-03-25T04:36:11.461Z INFO webdriverio: Initiate new session using the webdriver protocol
+2020-03-25T04:36:11.467Z INFO webdriver: [POST] http://127.0.0.1:4444/session
+2020-03-25T04:36:11.467Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'chrome' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'chrome' }
+}
+2020-03-25T04:36:19.120Z ERROR @wdio/runner: Error: Cannot find module 'chai'
+Require stack:
+- /home/gerald/Escritorio/wdriverTest/tests/mocha-chai.test.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/mocha/lib/mocha.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/mocha/index.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/mocha-framework/build/index.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/utils/build/utils.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/utils/build/initialisePlugin.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/utils/build/index.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/runner/build/index.js
+- /home/gerald/Escritorio/wdriverTest/node_modules/@wdio/local-runner/build/run.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (/home/gerald/Escritorio/wdriverTest/tests/mocha-chai.test.js:1:1)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Module._compile (/home/gerald/Escritorio/wdriverTest/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Object.newLoader [as .js] (/home/gerald/Escritorio/wdriverTest/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+2020-03-25T04:36:19.160Z INFO webdriver: COMMAND deleteSession()
+2020-03-25T04:36:19.161Z INFO webdriver: [DELETE] http://127.0.0.1:4444/session/a473b3c3142f04fa88a276d78cb79a0a
